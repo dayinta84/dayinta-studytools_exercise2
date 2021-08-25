@@ -1,0 +1,107 @@
+/* navbar */
+.navigasi{
+    float: right;
+    margin: 12px 56px 0 0;
+    border-bottom: 3px solid rgb(163, 39, 39);
+    padding-bottom: 5px;
+}
+
+.navigasi a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin: 0 0 0 8px;
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.navigasi a:hover{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    border-bottom: 3px solid rgb(170, 58, 73);
+}
+/* selesai navbar */
+
+
+
+#saya{
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    margin: 200px 0 0 100px;
+}
+
+/* nama */
+.myName{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.perkenalan p{
+    font-size: 16px;
+    margin: -16px 0 10px 0;
+}
+
+/* logo medsos */
+.medsos a img{
+    width: 25px;
+}
+
+.medsos a.wa img{
+    width: 37px;
+    margin-left: -5px;
+}
+
+img.hiasan1{
+    width: 250px;
+    margin: -250px 300px 0 200px;
+    float: right;
+    border-radius: 20px;
+}
+
+
+
+
+@media (max-width:1142px){
+    #saya{
+        position: relative;
+        right: 70px;
+    }
+
+    img.hiasan1{
+        width: 200px;
+        margin-top: -190px;
+        position: relative;
+        right: -240px;
+    }
+
+    .medsos a img{
+        width: 20px;
+    }
+
+    .medsos a.wa img{
+        width: 32px;
+        margin-left: -5px;
+    }
+
+    .myName{
+        font-size: 28px;
+        margin-top: -70px;
+    }
+    
+    .perkenalan p{
+        font-size: 14px;
+        margin: -16px 0 10px 0;
+    }
+}
+
+
+@media (max-width:750){
+    .navigasi{
+        margin: 0 auto;
+    }
+
+    .home{
+    }
+
+
+}

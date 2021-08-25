@@ -1,0 +1,51 @@
+/* semua */
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/* navbar */
+.navigasi{
+    float: right;
+    margin: 12px 56px 0 0;
+    border-bottom: 3px solid rgb(163, 39, 39);
+    padding-bottom: 5px;
+
+}
+
+.navigasi a{
+    font-size: 14px;
+    margin: 0 0 0 8px;
+    text-decoration: none;
+    color: #000;
+    text-transform: lowercase;
+    text-transform: uppercase;
+}
+
+.navigasi a:hover{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    border-bottom: 3px solid rgb(163, 39, 39);
+}
+/* selesai navbar */
+
+
+h2{
+    margin: 50px 0 15px 230px;
+}
+
+
+table{
+    margin: 0 auto 0 auto;
+}
+
+img{
+    width: 250px;
+    padding: 10px;
+    border: 3px solid rgb(114, 16, 16);
+    border-radius: 10px;
+    margin: 20px;
+    height: 300px;
+    object-fit: cover;
+}

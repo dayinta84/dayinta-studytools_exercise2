@@ -1,0 +1,59 @@
+/* semua */
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* selesai semua */
+
+/* navbar */
+.navigasi{
+    float: right;
+    margin: 12px 56px 0 0;
+    border-bottom: 3px solid rgb(163, 39, 39);
+    padding-bottom: 5px;
+}
+
+.navigasi a{
+    font-size: 14px;
+    margin: 0 0 0 8px;
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.navigasi a:hover{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    border-bottom: 3px solid rgb(163, 39, 39);
+}
+/* selesai navbar */
+
+
+/*table */
+    /* myName */
+    tr td .myName{
+        text-align: center;
+        font-size: 24px;
+    }
+
+    tr td p{
+        font-size: 16px;
+    }
+
+    tr th h2{
+        font-size: 20px;
+    }
+    /* selesai myName */
+/* selesai table */
+
+table.data{
+    margin: 70px 0 0 100px;
+}
+
+.hiasan1{
+    float: right;
+    width: 250px;
+    border: 3px solid #841c1c;
+    border-radius: 20px;
+    padding: 5px;
+    margin: -500px 120px 0 
+}
