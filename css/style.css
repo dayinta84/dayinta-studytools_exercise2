@@ -1,31 +1,116 @@
 /* navbar */
-.navigasi{
-    float: right;
-    margin: 12px 56px 0 0;
-    border-bottom: 3px solid rgb(163, 39, 39);
-    padding-bottom: 5px;
-}
-
-.navigasi a{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    margin: 0 0 0 8px;
+*{
+    padding: 0;
+    margin: 0;
     text-decoration: none;
-    color: #000;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  body{
+    font-family: montserrat;
+  }
+  nav{
+    /* background: #0082e6; */
+    background: transparent;
+    height: 80px;
+    width: 100%;
+    /* border-bottom: 2px grasi blue; */
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+  }
+  nav label.logo{
+    /* color: white; */
+    color: #2c3e50;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 2px;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    /* color: white; */
+    color: black;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
     text-transform: uppercase;
-}
+  }
+  nav a.active,a:hover{
+    background: #1b9bff;
+    transition: 0.4s;
+    color: white;
+  }
+  nav .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
 
-.navigasi a:hover{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    border-bottom: 3px solid rgb(170, 58, 73);
-}
+
+  @media (max-width: 952px){
+    nav label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+  }
+
+
+  @media (max-width: 858px){
+    nav .checkbtn{
+      display: block;
+      color: black;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+     nav ul li a{
+      font-size: 20px;
+    }
+    nav a:hover,a.active{
+      background: none;
+      color: #0082e6;
+    }
+    nav #check:checked ~ ul{
+      left: 0;
+      z-index: 1;
+    }
+  }
 /* selesai navbar */
 
 
 
 #saya{
-    font-family: Arial, Helvetica, sans-serif;
     display: inline-block;
     margin: 200px 0 0 100px;
 }
@@ -34,11 +119,18 @@
 .myName{
     font-size: 35px;
     font-weight: bold;
+    margin-top: -28px;
 }
 
 .perkenalan p{
     font-size: 16px;
-    margin: -16px 0 10px 0;
+    margin: 12px 0;
+}
+
+.perkenalan p.sayaAdalah{
+  opacity: 0.75;
+  font-size: 14px;
+  margin-top: 4px;
 }
 
 /* logo medsos */
@@ -51,57 +143,194 @@
     margin-left: -5px;
 }
 
-img.hiasan1{
-    width: 250px;
-    margin: -250px 300px 0 200px;
+img.profil1{
+    width: 310.6px;
     float: right;
-    border-radius: 20px;
+    margin: -314px -8px 0 0;
+}
+
+img.profil2 , img.profil3{
+    display: none;
 }
 
 
 
+/* footer */
+footer{
+  /* padding: 40px 50%; */
+  width: 100%;
+  height: 250px;
+  text-align: center;
+  background-color: #67a7d8;
+  display: inline-block;
+}
 
-@media (max-width:1142px){
+footer .email{
+  margin-top: 50px;
+}
+
+
+footer .email p{
+  font-size: 16px;
+}
+
+footer .email p a{
+  color: rgb(209, 255, 43);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+footer .sosmed{
+  text-align: center ;
+  margin: 25px 0;
+}
+
+footer .sosmed a{
+  font-size: 32px;
+  color: black;
+  border: 1.5px solid rgb(255, 255, 255);
+  line-height: 32px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 8px;
+  opacity: 0.65;
+  padding: 5px;
+}
+
+footer .sosmed a:hover{
+  opacity: 1;
+}
+
+footer ul{
+  list-style: none;
+  font-size: 18px;
+  line-height: 38px;
+}
+
+footer ul li{
+  display: inline-block;
+  padding: 0 15px;
+}
+
+footer ul li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  opacity: 0.8;
+  color: inherit;
+}
+
+footer ul li a:hover{
+  opacity: 1;
+}
+/* selesai footer */
+
+
+
+/* responsive break point */
+
+@media (max-width:858px){
+    img.profil1, img.profil3{
+        display: none;
+    }
+
+    img.profil2{
+        display: block;
+        width: 160px;
+        border-radius: 10px;
+        float: right;
+        /* margin: 30px auto 0 auto; */
+        border: 2px solid #1b9bff;
+        padding: 5px;
+        margin: 50px 20px 0 0;
+    }
+
     #saya{
-        position: relative;
-        right: 70px;
-    }
-
-    img.hiasan1{
-        width: 200px;
-        margin-top: -190px;
-        position: relative;
-        right: -240px;
-    }
-
-    .medsos a img{
-        width: 20px;
-    }
-
-    .medsos a.wa img{
-        width: 32px;
-        margin-left: -5px;
+        margin: 100px 0 0 20px;
     }
 
     .myName{
         font-size: 28px;
-        margin-top: -70px;
+        
     }
-    
+
     .perkenalan p{
         font-size: 14px;
-        margin: -16px 0 10px 0;
+        margin: 10px 0;
+        width: 330px;
     }
+
+    .medsos{
+        margin-top: 25px;
+    }
+
+
+    footer{
+      margin-top: 52px;
+    }
+
+    
+    footer .email p{
+      font-size: 14px;
+    }
+
+    footer .sosmed a{
+     font-size: 24px;
+    }
+
+    footer ul{
+      font-size: 14px;
+      display: contents;
+    }
+
+    footer ul li{
+      margin: 0 -5px;
+    }
+
+    footer .sosmed a{
+      font-size: 28px;
+     }
+
+
 }
+@media (max-width:600px){
 
-
-@media (max-width:750){
-    .navigasi{
-        margin: 0 auto;
+    *{
+        text-align: center;
     }
 
-    .home{
+    #saya{
+        margin: 50px 0 0 20px;
+    }
+
+    img.profil2{
+      display: none;
+    }
+
+    img.profil3{
+        display: flex;
+        /* justify-content: center; */
+        width: 150px;
+        border-radius: 100%;
+        margin: 30px 32% 0 auto;
+        border: 2px solid #1b9bff;
+        padding: 5px;
+    }
+
+    .perkenalan p{
+        width: inherit;
+    }
+    
+    .medsos a img{
+        margin: 0 10px;
     }
 
 
+    .medsos a.wa img {
+        margin-left: 0px;
+    }
+
+    footer .sosmed a{
+      font-size: 24px;
+      margin: 0 4px;
+     }
 }
