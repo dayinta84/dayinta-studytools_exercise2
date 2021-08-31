@@ -1,162 +1,159 @@
 /* navbar */
-*{
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-  }
-  body{
-    font-family: montserrat;
-  }
-  nav{
-    /* background: #0082e6; */
-    background: transparent;
-    height: 80px;
-    width: 100%;
-    /* border-bottom: 2px grasi blue; */
-    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
-  }
-  nav label.logo{
-    /* color: white; */
-    color: #2c3e50;
-    font-size: 35px;
-    line-height: 80px;
-    padding: 0 100px;
-    font-weight: bold;
-    font-family: 'Pacifico', cursive;
-    letter-spacing: 2px;
-  }
-  nav ul{
-    float: right;
-    margin-right: 20px;
-  }
-  nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-  }
-  nav ul li a{
-    /* color: white; */
-    color: black;
-    font-size: 17px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
-  }
-  nav a.active,a:hover{
-    background: #1b9bff;
-    transition: 0.4s;
-    color: white;
-  }
-  nav .checkbtn{
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: montserrat;
+}
+nav {
+  /* background: #0082e6; */
+  background: transparent;
+  height: 80px;
+  width: 100%;
+  /* border-bottom: 2px grasi blue; */
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+}
+nav label.logo {
+  /* color: #ce2659; */
+  color: #173aac;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+  font-family: "Pacifico", cursive;
+  letter-spacing: 2px;
+}
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a {
+  /* color: white; */
+  color: black;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+nav a.active,
+a:hover {
+  background: #1b9bff;
+  transition: 0.4s;
+  color: white;
+}
+nav .checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+
+@media (max-width: 952px) {
+  nav label.logo {
     font-size: 30px;
-    color: white;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
+    padding-left: 50px;
   }
-  #check{
-    display: none;
+  nav ul li a {
+    font-size: 16px;
   }
+}
 
-
-  @media (max-width: 952px){
-    nav label.logo{
-      font-size: 30px;
-      padding-left: 50px;
-    }
-    nav ul li a{
-      font-size: 16px;
-    }
+@media (max-width: 858px) {
+  nav .checkbtn {
+    display: block;
+    color: black;
   }
-
-
-  @media (max-width: 858px){
-    nav .checkbtn{
-      display: block;
-      color: black;
-    }
-    ul{
-      position: fixed;
-      width: 100%;
-      height: 100vh;
-      background: #2c3e50;
-      top: 80px;
-      left: -100%;
-      text-align: center;
-      transition: all .5s;
-    }
-    nav ul li{
-      display: block;
-      margin: 50px 0;
-      line-height: 30px;
-    }
-     nav ul li a{
-      font-size: 20px;
-    }
-    nav a:hover,a.active{
-      background: none;
-      color: #0082e6;
-    }
-    nav #check:checked ~ ul{
-      left: 0;
-      z-index: 1;
-    }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
   }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  nav a:hover,
+  a.active {
+    background: none;
+    color: #0082e6;
+  }
+  nav #check:checked ~ ul {
+    left: 0;
+    z-index: 1;
+  }
+}
 /* selesai navbar */
 
-
-
-#saya{
-    display: inline-block;
-    margin: 200px 0 0 100px;
+#saya {
+  display: inline-block;
+  margin: 200px 0 0 100px;
 }
 
 /* nama */
-.myName{
-    font-size: 35px;
-    font-weight: bold;
-    margin-top: -28px;
+.myName {
+  font-size: 35px;
+  font-weight: bold;
+  margin-top: -28px;
 }
 
-.perkenalan p{
-    font-size: 16px;
-    margin: 12px 0;
+.perkenalan p {
+  font-size: 16px;
+  margin: 12px 0;
 }
 
-.perkenalan p.sayaAdalah{
+.perkenalan p.sayaAdalah {
   opacity: 0.75;
   font-size: 14px;
   margin-top: 4px;
 }
 
 /* logo medsos */
-.medsos a img{
-    width: 25px;
+.medsos a img {
+  width: 25px;
 }
 
-.medsos a.wa img{
-    width: 37px;
-    margin-left: -5px;
+.medsos a.wa img {
+  width: 37px;
+  margin-left: -5px;
 }
 
-img.profil1{
-    width: 310.6px;
-    float: right;
-    margin: -314px -8px 0 0;
+img.profil1 {
+  width: 310.6px;
+  float: right;
+  margin: -314px -8px 0 0;
 }
 
-img.profil2 , img.profil3{
-    display: none;
+img.profil2,
+img.profil3 {
+  display: none;
 }
-
-
 
 /* footer */
-footer{
+footer {
   /* padding: 40px 50%; */
   width: 100%;
   height: 250px;
@@ -165,26 +162,25 @@ footer{
   display: inline-block;
 }
 
-footer .email{
+footer .email {
   margin-top: 50px;
 }
 
-
-footer .email p{
+footer .email p {
   font-size: 16px;
 }
 
-footer .email p a{
+footer .email p a {
   color: rgb(209, 255, 43);
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-footer .sosmed{
-  text-align: center ;
+footer .sosmed {
+  text-align: center;
   margin: 25px 0;
 }
 
-footer .sosmed a{
+footer .sosmed a {
   font-size: 32px;
   color: black;
   border: 1.5px solid rgb(255, 255, 255);
@@ -197,140 +193,132 @@ footer .sosmed a{
   padding: 5px;
 }
 
-footer .sosmed a:hover{
+footer .sosmed a:hover {
   opacity: 1;
 }
 
-footer ul{
+footer ul {
   list-style: none;
   font-size: 18px;
   line-height: 38px;
 }
 
-footer ul li{
+footer ul li {
   display: inline-block;
   padding: 0 15px;
 }
 
-footer ul li a{
+footer ul li a {
   text-decoration: none;
   text-transform: uppercase;
   opacity: 0.8;
   color: inherit;
 }
 
-footer ul li a:hover{
+footer ul li a:hover {
   opacity: 1;
 }
 /* selesai footer */
 
-
-
 /* responsive break point */
 
-@media (max-width:858px){
-    img.profil1, img.profil3{
-        display: none;
-    }
+@media (max-width: 858px) {
+  img.profil1,
+  img.profil3 {
+    display: none;
+  }
 
-    img.profil2{
-        display: block;
-        width: 160px;
-        border-radius: 10px;
-        float: right;
-        /* margin: 30px auto 0 auto; */
-        border: 2px solid #1b9bff;
-        padding: 5px;
-        margin: 50px 20px 0 0;
-    }
+  img.profil2 {
+    display: block;
+    width: 160px;
+    border-radius: 10px;
+    float: right;
+    /* margin: 30px auto 0 auto; */
+    border: 2px solid #1b9bff;
+    padding: 5px;
+    margin: 50px 20px 0 0;
+  }
 
-    #saya{
-        margin: 100px 0 0 20px;
-    }
+  #saya {
+    margin: 100px 0 0 20px;
+  }
 
-    .myName{
-        font-size: 28px;
-        
-    }
+  .myName {
+    font-size: 28px;
+  }
 
-    .perkenalan p{
-        font-size: 14px;
-        margin: 10px 0;
-        width: 330px;
-    }
+  .perkenalan p {
+    font-size: 14px;
+    margin: 10px 0;
+    width: 330px;
+  }
 
-    .medsos{
-        margin-top: 25px;
-    }
+  .medsos {
+    margin-top: 25px;
+  }
 
+  footer {
+    margin-top: 52px;
+  }
 
-    footer{
-      margin-top: 52px;
-    }
+  footer .email p {
+    font-size: 14px;
+  }
 
-    
-    footer .email p{
-      font-size: 14px;
-    }
+  footer .sosmed a {
+    font-size: 24px;
+  }
 
-    footer .sosmed a{
-     font-size: 24px;
-    }
+  footer ul {
+    font-size: 14px;
+    display: contents;
+  }
 
-    footer ul{
-      font-size: 14px;
-      display: contents;
-    }
+  footer ul li {
+    margin: 0 -5px;
+  }
 
-    footer ul li{
-      margin: 0 -5px;
-    }
-
-    footer .sosmed a{
-      font-size: 28px;
-     }
-
-
+  footer .sosmed a {
+    font-size: 28px;
+  }
 }
-@media (max-width:600px){
+@media (max-width: 600px) {
+  * {
+    text-align: center;
+  }
 
-    *{
-        text-align: center;
-    }
+  #saya {
+    margin: 50px 0 0 20px;
+  }
 
-    #saya{
-        margin: 50px 0 0 20px;
-    }
+  img.profil2 {
+    display: none;
+  }
 
-    img.profil2{
-      display: none;
-    }
+  img.profil3 {
+    display: flex;
+    /* justify-content: center; */
+    width: 150px;
+    border-radius: 100%;
+    margin: 30px 32% 0 auto;
+    border: 2px solid #1b9bff;
+    padding: 5px;
+  }
 
-    img.profil3{
-        display: flex;
-        /* justify-content: center; */
-        width: 150px;
-        border-radius: 100%;
-        margin: 30px 32% 0 auto;
-        border: 2px solid #1b9bff;
-        padding: 5px;
-    }
+  .perkenalan p {
+    width: inherit;
+  }
 
-    .perkenalan p{
-        width: inherit;
-    }
-    
-    .medsos a img{
-        margin: 0 10px;
-    }
+  .medsos a img {
+    margin: 0 10px;
+  }
 
+  .medsos a.wa img {
+    margin-left: 0px;
+  }
 
-    .medsos a.wa img {
-        margin-left: 0px;
-    }
-
-    footer .sosmed a{
-      font-size: 24px;
-      margin: 0 4px;
-     }
+  footer .sosmed a {
+    font-size: 24px;
+    margin: 0 4px;
+  }
 }
