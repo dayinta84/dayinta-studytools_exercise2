@@ -113,6 +113,15 @@ nav .checkbtn {
   margin: 200px 0 0 100px;
 }
 
+.perkenalan,
+.medsos {
+  margin-bottom: 100px;
+}
+
+img.hiasan1 {
+  width: 330px;
+}
+
 /* nama */
 .myName {
   font-size: 35px;
